@@ -1,7 +1,18 @@
 
   # CineVerse Mobile App UI
 
-  This is a code bundle for CineVerse Mobile App UI. The original project is available at https://www.figma.com/design/QMVEMKMICQF1Hmgipsvvwr/CineVerse-Mobile-App-UI.
+ # Movie Booking Application
+
+This project is a movie ticket booking interface developed for APPTHETICS 3.0 Hackathon.
+
+Features:
+- Movie browsing
+- Seat selection
+- Booking confirmation
+- Modern mobile-style UI
+
+Technologies used:
+React, Vite, Node.js
 
   ## Running the code
 
