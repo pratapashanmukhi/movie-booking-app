@@ -1,22 +1,47 @@
+# 🎬 CineVerse – Movie Booking App
 
-  # CineVerse Mobile App UI
+CineVerse is a modern movie ticket booking interface built for **APPTHETICS 3.0 Hackathon**.
 
- # Movie Booking Application
+It allows users to browse movies, view ratings, and book tickets through a clean mobile-style UI.
 
-This project is a movie ticket booking interface developed for APPTHETICS 3.0 Hackathon.
+---
 
-Features:
-- Movie browsing
-- Seat selection
-- Booking confirmation
-- Modern mobile-style UI
+## 🚀 Features
 
-Technologies used:
-React, Vite, Node.js
+- 🔎 Search movies
+- 🎥 Browse currently showing movies
+- ⭐ Movie ratings
+- 🎟 Seat selection system
+- 📱 Mobile-style responsive UI
+- 🔔 Notification icon
+- 👥 Future support for group bookings
 
-  ## Running the code
+---
 
-  Run `npm i` to install the dependencies.
+## 🛠 Tech Stack
 
-  Run `npm run dev` to start the development server.
-  
+Frontend:
+- React
+- Vite
+- Material UI
+
+Backend:
+- Node.js
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+![Home](assets/home.png)
+
+### Movie List
+![Movies](assets/movie-list.png)
+
+### Seat Selection
+![Seats](assets/seat-selection.png)
+
+---
+
+## ⚡ Run Locally
+
