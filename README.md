@@ -40,9 +40,11 @@ Backend:
 ### 🎬 Featured Movie
 ![Featured Movie](assets/movie-banner.jpeg)
 
-### Seat Selection
-![Seats](assets/seat-selection.png)
+### 🎟 Seat Selection
+![Seat](assets/seat.jpeg)
 
+### 💳 Group Payment
+![Group Payment](assets/group-payment.jpeg)
 ---
 
 ## ⚡ Run Locally
