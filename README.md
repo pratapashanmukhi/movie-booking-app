@@ -32,8 +32,10 @@ Backend:
 
 ## 📸 Screenshots
 
+## 📸 Screenshots
+
 ### Home Page
-![Home](assets/home.png)
+![Home Page](assets/home.jpg.jpeg)
 
 ### Movie List
 ![Movies](assets/movie-list.png)
