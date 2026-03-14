@@ -112,6 +112,13 @@ movie-booking-app
 
 ---
 
+## 🌐 Live Demo
+
+Try the CineVerse Movie Booking App here:
+
+https://cineverse-app-five.vercel.app
+
+
 ## 👩‍💻 Author
 
 **Shanmukhi Pratapa**
