@@ -37,8 +37,8 @@ Backend:
 ### Home Page
 ![Home Page](assets/home.jpg.jpeg)
 
-### Movie List
-![Movies](assets/movie-list.png)
+### 🎬 Featured Movie
+![Featured Movie](assets/movie-banner.jpeg)
 
 ### Seat Selection
 ![Seats](assets/seat-selection.png)
