@@ -32,8 +32,8 @@ Backend:
 
 ## 📸 Screenshots
 
-### Home Page
-![Home Page](assets/home.jpg.jpeg)
+### 🏠 Home Page
+![Home Page](assets/home.jpeg)
 
 ### 🎬 Featured Movie
 ![Featured Movie](assets/movie-banner.jpeg)
@@ -115,7 +115,9 @@ movie-booking-app
 ## 👩‍💻 Author
 
 **Shanmukhi Pratapa**
+
 **shaik jakeera**
+
 **Vyshnavi**
 
 GitHub:
