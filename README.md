@@ -32,8 +32,6 @@ Backend:
 
 ## 📸 Screenshots
 
-## 📸 Screenshots
-
 ### Home Page
 ![Home Page](assets/home.jpg.jpeg)
 
@@ -43,9 +41,84 @@ Backend:
 ### 🎟 Seat Selection
 ![Seat](assets/seat.jpeg)
 
-### 💳 Group Payment
-![Group Payment](assets/group-payment.jpeg)
+### 💳 Booking Summary
+![Booking Summary](assets/booking-summary.jpeg)
 ---
 
-## ⚡ Run Locally
+### ⚡ Run Locally
+
+Clone the project
+
+```bash
+git clone https://github.com/pratapashanmukhi/movie-booking-app.git
+```
+
+Go to the project directory
+
+```bash
+cd movie-booking-app
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Open in browser
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📂 Project Structure
+
+```
+movie-booking-app
+│
+├── assets
+│   ├── home.jpeg
+│   ├── movie-banner.jpeg
+│   ├── seat.jpeg
+│
+├── src
+│   ├── components
+│   ├── screens
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── index.html
+├── package.json
+└── README.md
+```
+
+---
+
+## 🚀 Future Improvements
+
+* Online ticket payment integration
+* Real-time seat availability
+* User authentication system
+* Movie recommendations using AI
+* Group booking feature
+
+---
+
+## 👩‍💻 Author
+
+**Shanmukhi Pratapa**
+**shaik jakeera**
+**Vyshnavi**
+
+GitHub:
+https://github.com/pratapashanmukhi
+
 
