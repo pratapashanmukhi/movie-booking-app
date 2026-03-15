@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 =======
 # 🎬 CineVerse – Movie Booking App
 
