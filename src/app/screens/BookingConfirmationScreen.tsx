@@ -32,6 +32,44 @@ export function BookingConfirmationScreen() {
     if (groupSeats) {
       setGroupSeatsContext(groupSeats);
     }
+<<<<<<< HEAD
+=======
+    
+    if (sessionId) {
+      if (!socket.connected) {
+        socket.connect();
+        // Since we may have reconnected, re-join the room
+        socket.emit('joinSession', { sessionId, userName: currentUser?.name || "Anonymous" }, (res: any) => {
+           if (res.sessionData?.seats) setGroupSeatsContext(res.sessionData.seats);
+        });
+      }
+
+      socket.on('paymentStatus', (data) => {
+        setPaidUsers(data.payments);
+      });
+
+      socket.on('bookingConfirmed', (data) => {
+        // Everyone paid!
+        navigate("/booking/ticket", {
+          state: {
+            movie,
+            theatre,
+            date,
+            time,
+            seats,
+            totalPrice,
+            convenienceFee,
+            bookingId: data.bookingId
+          }
+        });
+      });
+
+      return () => {
+        socket.off('paymentStatus');
+        socket.off('bookingConfirmed');
+      };
+    }
+>>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
   }, [sessionId, navigate, movie, theatre, date, time, seats, totalPrice, convenienceFee, groupSeats, currentUser]);
 
   const paymentMethods = [
@@ -44,6 +82,7 @@ export function BookingConfirmationScreen() {
   const handleConfirm = () => {
     if (selectedPayment) {
       if (sessionId && currentUser) {
+<<<<<<< HEAD
         // Group booking flow - mark self as paid locally and redirect to finish
         setPaymentComplete(true);
         setIsWaitingForOthers(true);
@@ -63,6 +102,12 @@ export function BookingConfirmationScreen() {
             }
           });
         }, 2500);
+=======
+        // Group booking flow - mark self as paid
+        setPaymentComplete(true);
+        setIsWaitingForOthers(true);
+        socket.emit('paymentComplete', { sessionId, userName: currentUser.name || "Anonymous" });
+>>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
       } else {
         // Normal single booking flow
         navigate("/booking/ticket", {

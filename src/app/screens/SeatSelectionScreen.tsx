@@ -3,7 +3,11 @@ import { useNavigate, useParams, useLocation } from "react-router";
 import { motion, AnimatePresence } from "motion/react";
 import { ArrowLeft, Share2, Check, Copy, Users } from "lucide-react";
 import { Button } from "../components/ui/button";
+<<<<<<< HEAD
 import { movies, theatres } from "../data/movies";
+=======
+import { movies } from "../data/movies";
+>>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
 import { useAuth } from "../contexts/AuthContext";
 import { socket } from "../utils/socket";
 
@@ -40,6 +44,7 @@ export function SeatSelectionScreen() {
 
   useEffect(() => {
     if (sessionId && currentUser) {
+<<<<<<< HEAD
       // Mock session details
       if (!hasAccepted) {
         setHasAccepted(true);
@@ -54,12 +59,70 @@ export function SeatSelectionScreen() {
       }
     }
   }, [sessionId, currentUser, navigate, hasAccepted, id, location.state]);
+=======
+      if (!socket.connected) {
+        socket.connect();
+      }
+
+      // If joining an existing session, we need to prompt them first
+      // But only if we haven't already accepted or are the creator
+      if (!hasAccepted) {
+        socket.emit('getSessionDetails', sessionId, (response: any) => {
+          if (response.error) {
+            alert(response.error);
+            navigate('/home');
+          } else {
+            // Check if creator
+            if (response.creatorName === currentUser.name) {
+              setHasAccepted(true);
+            } else {
+              setInviterName(response.creatorName);
+              setGroupContext(response);
+              setShowAcceptPrompt(true);
+            }
+          }
+        });
+      } else {
+        // We have accepted, now join the room
+        socket.emit('joinSession', { sessionId, userName: currentUser.name || "Anonymous" }, (response: any) => {
+          if (response.error) {
+            alert(response.error);
+            navigate('/home');
+          } else {
+            setGroupContext(response.sessionData);
+            setSessionUsers(response.sessionData.users || []);
+            setLockedSeats(response.sessionData.seats || {});
+          }
+        });
+      }
+
+      socket.on('userJoined', (data) => {
+        setSessionUsers(data.users);
+      });
+
+      socket.on('userLeft', (data) => {
+        setSessionUsers(data.users);
+      });
+
+      socket.on('seatUpdated', (data) => {
+        setLockedSeats(data.seats);
+      });
+
+      return () => {
+        socket.off('userJoined');
+        socket.off('userLeft');
+        socket.off('seatUpdated');
+      };
+    }
+  }, [sessionId, currentUser, navigate, hasAccepted]);
+>>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
 
   const toggleSeat = (seat: string) => {
     if (bookedSeats.includes(seat)) return;
     
     if (isGroupSession) {
       const userName = currentUser?.name || "Anonymous";
+<<<<<<< HEAD
       if (lockedSeats[seat] && lockedSeats[seat] !== userName) return;
 
       setLockedSeats(prev => {
@@ -71,6 +134,16 @@ export function SeatSelectionScreen() {
         }
         return next;
       });
+=======
+      // If seat is locked by someone else, ignore
+      if (lockedSeats[seat] && lockedSeats[seat] !== userName) return;
+
+      if (lockedSeats[seat] === userName) {
+        socket.emit('deselectSeat', { sessionId, seat, userName });
+      } else {
+        socket.emit('selectSeat', { sessionId, seat, userName });
+      }
+>>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
     } else {
       setSelectedSeats((prev) =>
         prev.includes(seat)
