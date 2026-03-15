@@ -8,17 +8,12 @@ import { Input } from "../components/ui/input";
 export function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
 
-<<<<<<< HEAD
   const filteredMovies = movies.filter(movie => 
     movie.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   const nowShowing = filteredMovies.slice(0, 3);
   const upcoming = filteredMovies.slice(3, 6);
-=======
-  const nowShowing = movies.slice(0, 3);
-  const upcoming = movies.slice(3, 6);
->>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
 
   return (
     <div className="min-h-screen bg-background pb-6">

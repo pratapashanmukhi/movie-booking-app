@@ -2,7 +2,6 @@
 
 :root {
   --font-size: 16px;
-<<<<<<< HEAD
   --background: #0B0F19; /* Deep Slate/Navy */
   --foreground: #ffffff;
   --card: #141A29;
@@ -26,41 +25,12 @@
   --font-weight-medium: 600;
   --font-weight-normal: 400;
   --ring: #F84464;
-=======
-  --background: #0a0a0a;
-  --foreground: #ffffff;
-  --card: #1a1a1a;
-  --card-foreground: #ffffff;
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: #ef4444;
-  --primary-foreground: #ffffff;
-  --secondary: #ff6b35;
-  --secondary-foreground: #ffffff;
-  --muted: #2a2a2a;
-  --muted-foreground: #a0a0a0;
-  --accent: #ef4444;
-  --accent-foreground: #ffffff;
-  --destructive: #d4183d;
-  --destructive-foreground: #ffffff;
-  --border: rgba(255, 255, 255, 0.1);
-  --input: rgba(255, 255, 255, 0.1);
-  --input-background: #1a1a1a;
-  --switch-background: #2a2a2a;
-  --font-weight-medium: 600;
-  --font-weight-normal: 400;
-  --ring: #ef4444;
->>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-<<<<<<< HEAD
   --radius: 1.25rem; /* slightly rounder */
-=======
-  --radius: 1rem;
->>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: #030213;
@@ -72,7 +42,6 @@
 }
 
 .dark {
-<<<<<<< HEAD
   --background: #0B0F19; /* Deep Slate/Navy */
   --foreground: #ffffff;
   --card: #141A29;
@@ -92,27 +61,6 @@
   --border: rgba(255, 255, 255, 0.08); /* Softer borders */
   --input: rgba(255, 255, 255, 0.1);
   --ring: #F84464;
-=======
-  --background: #0a0a0a;
-  --foreground: #ffffff;
-  --card: #1a1a1a;
-  --card-foreground: #ffffff;
-  --popover: #1a1a1a;
-  --popover-foreground: #ffffff;
-  --primary: #ef4444;
-  --primary-foreground: #ffffff;
-  --secondary: #ff6b35;
-  --secondary-foreground: #ffffff;
-  --muted: #2a2a2a;
-  --muted-foreground: #a0a0a0;
-  --accent: #ef4444;
-  --accent-foreground: #ffffff;
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: rgba(255, 255, 255, 0.1);
-  --input: rgba(255, 255, 255, 0.1);
-  --ring: #ef4444;
->>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
   --font-weight-medium: 600;
   --font-weight-normal: 400;
   --chart-1: oklch(0.488 0.243 264.376);

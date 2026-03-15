@@ -46,19 +46,11 @@ export function ProfileScreen() {
             className="bg-gradient-to-br from-card to-card/50 border border-border rounded-3xl p-6"
           >
             <div className="flex items-center gap-4 mb-6">
-<<<<<<< HEAD
               <div className="w-20 h-20 rounded-full bg-gradient-to-br from-red-600 to-orange-600 flex items-center justify-center overflow-hidden">
                 <img
                   src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${currentUser?.name || 'Guest'}`}
                   alt="Profile Avatar"
                   className="w-full h-full object-cover bg-white"
-=======
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-red-600 to-orange-600 flex items-center justify-center">
-                <img
-                  src="https://images.unsplash.com/photo-1738566061505-556830f8b8f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdCUyMGFzaWFuJTIwbWFufGVufDF8fHx8MTc3MzQwMzQ4N3ww&ixlib=rb-4.1.0&q=80&w=1080"
-                  alt="Profile"
-                  className="w-full h-full rounded-full object-cover"
->>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
                 />
               </div>
               <div className="flex-1">

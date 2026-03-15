@@ -38,7 +38,6 @@ export function TheatreShowtimeScreen() {
         socket.connect();
       }
 
-<<<<<<< HEAD
       // Mock the socket response since we have no backend
       setTimeout(() => {
         setIsCreatingGroup(false);
@@ -52,8 +51,6 @@ export function TheatreShowtimeScreen() {
         });
       }, 800);
       /*
-=======
->>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
       socket.emit('createSession', {
         userName: currentUser.name || 'Anonymous',
         movie: { id },
@@ -72,10 +69,7 @@ export function TheatreShowtimeScreen() {
           });
         }
       });
-<<<<<<< HEAD
       */
-=======
->>>>>>> 64f2aa63aa6c4d0ff63db9987f240e67fe32e74c
     }
   };
 
