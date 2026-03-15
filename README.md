@@ -1,5 +1,4 @@
-=======
-# 🎬 CineVerse – Movie Booking App
+### 🎬 CineVerse – Movie Booking App
 
 CineVerse is a modern movie ticket booking interface built for **APPTHETICS 3.0 Hackathon**.
 
