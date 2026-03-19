@@ -116,7 +116,7 @@ movie-booking-app
 
 Try the CineVerse Movie Booking App here:
 
-https://cineverse-app-five.vercel.app
+https://movie-booking-app-virid.vercel.app/login
 
 
 ## 👩‍💻 Author
