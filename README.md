@@ -1,4 +1,4 @@
-﻿# CineVerse — Full-Stack Movie Ticket Booking Platform
+# CineVerse - Full-Stack Movie Ticket Booking Platform
 
 [![React](https://img.shields.io/badge/React-18-61DAFB.svg?logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -11,10 +11,24 @@ A modern, responsive movie ticket reservation web application developed for the 
 
 ---
 
+## Project Overview
+
+CineVerse addresses the friction in modern movie reservation systems by delivering a low-latency, intuitive single-page application. Designed with modern web standards, it eliminates cumbersome multi-page reload sequences, allowing moviegoers to browse showtimes, preview cinematic trailers, select theater seats interactively, and review order totals within a unified flow.
+
+### Problem Statement
+Traditional ticketing interfaces frequently suffer from:
+- Cluttered, unoptimized mobile layouts that hinder rapid seat selection.
+- Latent state synchronizations causing booking drop-offs or lost cart selections.
+- Inconsistent visual hierarchies across varying device viewports.
+
+CineVerse resolves these pain points through a mobile-first component architecture, fluid client-side routing, and real-time interactive seat occupancy tracking.
+
+---
+
 ## Live Prototype
 
-Experience the live application here:  
-**[movie-booking-app-virid.vercel.app](https://movie-booking-app-virid.vercel.app/login)**
+Experience the live application:  
+👉 **[movie-booking-app-virid.vercel.app](https://movie-booking-app-virid.vercel.app/login)**
 
 ---
 
@@ -25,6 +39,24 @@ Experience the live application here:
 - **Persistent Cart & Checkout Workflow**: Seamless state handling managing selected cinema tickets, concessions, showtimes, and total invoice calculations.
 - **Mobile-First Responsive Interface**: Optimized for tactile touch input across smartphones, tablets, and desktop displays.
 - **Modular Component Architecture**: Decoupled UI components built with Radix UI, Material UI, and Tailwind CSS.
+
+---
+
+## Architecture & Workflow
+
+```
+[ User Browser / Client ]
+           │
+           ▼
+[ React 18 + Vite SPA ]
+   ├── Client-Side Routing (App.tsx / screens)
+   ├── Dynamic State Management (Seat Matrix & Cart Context)
+   └── Responsive Design System (MUI + Tailwind CSS)
+           │
+           ▼
+[ Server / Mock API Layer (Node.js) ]
+   └── Movie Metadata & Showtime Catalog
+```
 
 ---
 
@@ -74,8 +106,8 @@ movie-booking-app/
 
 ### Prerequisites
 
-- Node.js (v18.x or v20.x recommended)
-- npm or pnpm
+- Node.js (`v18.x` or `v20.x` recommended)
+- `npm` or `pnpm`
 
 ### Local Installation
 
@@ -100,7 +132,7 @@ movie-booking-app/
 
 ---
 
-## Future Roadmap
+## Future Improvements
 
 - Payment gateway integration (Stripe / Razorpay).
 - Multi-theater and multi-language screening schedules.
@@ -111,6 +143,6 @@ movie-booking-app/
 
 ## Authors & Hackathon Team
 
-- **Shanmukhi Pratapa** ([@pratapashanmukhi](https://github.com/pratapashanmukhi))
+- **Shanmukhi Pratapa** ([@pratapashanmukhi](https://github.com/pratapashanmukhi)) - *Full Stack & UI Engineering*
 - **Shaik Jakeera**
 - **Vyshnavi**
